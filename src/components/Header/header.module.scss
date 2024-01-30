@@ -1,0 +1,21 @@
+@import url("../../index.scss");
+.header_block {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    margin-top: 56px;
+    margin-bottom: 80px;
+    
+    @media (max-width: 700px) {
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 40px
+        }
+    }
+
+    .container {
+        justify-content: space-between;
+        gap: 40px
+    }
+}

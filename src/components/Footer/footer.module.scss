@@ -1,0 +1,51 @@
+@import url("../../index.scss");
+
+.my_footer_block {
+    display: flex;
+    
+    background: linear-gradient(183deg, #67C3F3 -8.57%, #5A98F2 82.96%);
+
+    .container {
+        display: flex;
+        @media (max-width: 700px) {
+            flex-direction: column;
+        }
+        justify-content: space-between;
+        padding-top: 118px;
+        padding-bottom: 112px;
+
+        .col1 {
+            width: min(412px, 80vw);
+
+            p {
+                color: var(--cl-white);
+                font-weight: 300;
+                line-height: 28px;
+            }
+
+            .p1 {
+                font-size: min(18px, 9vw);
+                margin-top: 17px;
+                margin-bottom: 38px;
+            }
+        }
+
+        .col2 {
+            h4 {
+                color: var(--cl-white);
+                font-size: min(20px, 10vw);
+                line-height: 60px;
+            }
+
+            div {
+                display: flex;
+                flex-direction: column;
+                a {
+                    color: var(--cl-white);
+                    font-weight: 300;
+                    line-height: 38px;
+                }
+            }
+        }
+    }
+}
