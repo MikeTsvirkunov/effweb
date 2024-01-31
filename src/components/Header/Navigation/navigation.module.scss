@@ -1,0 +1,18 @@
+.navigation_block {
+    display: flex;
+    @media (max-width: 700px) {
+        flex-direction: column;
+        flex-basis: 200px;
+    }
+    flex-basis: 545px;
+    padding-top: 14px;
+    justify-content: space-between;
+    list-style: none;
+    font-size: min(18px, 9vw);
+
+    a {
+        color: var(--cl-hyfen);
+        font-weight: 400;
+        opacity: 0.5;
+    }
+}
